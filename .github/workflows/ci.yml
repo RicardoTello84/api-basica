@@ -49,6 +49,6 @@ jobs:
           port: ${{ secrets.DEPLOY_PORT }}
           script: |
             docker pull ricardotello1984/api-basica
-            docker stop api-basica || true
-            docker rm api-basica || true
+            docker stop ricardotello1984/api-basica || true
+            docker rm ricardotello1984/api-basica || true
             docker run -d --name api-basica -p 3000:3000 ricardotello1984/api-basica
