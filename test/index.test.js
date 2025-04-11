@@ -2,7 +2,7 @@ const request = require('supertest');
 const app = require('../index');
 
 describe('Pruebas de API', () => {
-  it('GET / debe responder con Hola Mundo', async () => {
+  it('GET / debe responder con Docker Hub Git', async () => {
     const res = await request(app).get('/');
     expect(res.statusCode).toBe(200);
     expect(res.text).toBe('Docker Hub Git');
