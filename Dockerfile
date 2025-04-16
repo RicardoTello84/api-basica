@@ -1,7 +1,8 @@
-FROM node:18
+FROM node:alpine
 
 WORKDIR /app
 COPY package*.json ./
+#RUN apt-get update && apt-get upgrade -y
 RUN npm install
 COPY . .
 
