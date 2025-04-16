@@ -63,7 +63,7 @@ jobs:
           severity: HIGH,CRITICAL
 
   build-and-deploy:
-    needs: docker-validation  # Este paso depende de que el job 'docker-validation' pase correctamente
+    needs: docker-validation  # Este paso depende de que el job 'docker-validation' pase correctamente.
     runs-on: ubuntu-latest
     #if: success()
     steps:
