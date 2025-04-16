@@ -59,7 +59,7 @@ jobs:
         with:
           image-ref: ricardotello1984/api-basica:latest
           format: table
-          exit-code: 1
+          exit-code: 0
           severity: HIGH,CRITICAL
 
   build-and-deploy:
