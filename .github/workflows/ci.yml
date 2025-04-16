@@ -52,6 +52,6 @@ jobs:
           script: |
            docker pull ricardotello1984/api-basica:latest
       
-      - name: Correr el contenedor
+      - name: Correr el conte
         run: |
           docker run -d --name api-basica -p 3000:3000 ricardotello1984/api-basica:latest
