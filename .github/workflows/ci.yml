@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Ejecutar ESLint
-        run: npx eslint .  # Este paso falla si ESLint encuentra errores
+        run: npx eslint .  # Este paso falla si ESLint encuentra error
 
   test:
     needs: eslint  # Este paso depende de que el job 'eslint' pase correctamente
